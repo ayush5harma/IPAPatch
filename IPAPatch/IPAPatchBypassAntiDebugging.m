@@ -93,8 +93,10 @@ static void test_aniti_debugger();
 
 + (void)load
 {
+#if !DEBUG
     disable_pt_deny_attach();
     disable_sysctl_debugger_checking();
+#endif
     
 #if TESTS_BYPASS
     test_aniti_debugger();

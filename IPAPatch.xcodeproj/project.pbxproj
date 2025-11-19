@@ -351,7 +351,8 @@
 					};
 					C6B263481E7BCB31009B4DEA = {
 						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 8RA8L783G3;
+						ProvisioningStyle = Manual;
 					};
 					C6DDBB5C1F51468D00A42BE2 = {
 						CreatedOnToolsVersion = 9.0;
@@ -837,9 +838,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh sethi (A62ZN48563)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8RA8L783G3;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -850,10 +853,12 @@
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_BUNDLE_IDENTIFIER = se.atg.atg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "f84d2fff-d2da-40d0-8c63-7b7a4a0c2b45";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "f84d2fff-d2da-40d0-8c63-7b7a4a0c2b45";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -862,9 +867,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh sethi (A62ZN48563)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8RA8L783G3;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)",
@@ -873,10 +880,12 @@
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_BUNDLE_IDENTIFIER = se.atg.atg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "f84d2fff-d2da-40d0-8c63-7b7a4a0c2b45";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "f84d2fff-d2da-40d0-8c63-7b7a4a0c2b45";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

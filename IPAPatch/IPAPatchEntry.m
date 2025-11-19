@@ -22,7 +22,7 @@
     // DO YOUR WORKS...
     
     // For Example:
-    [self for_example_showAlert];
+//    [self for_example_showAlert];
 }
 
 + (void)for_example_showAlert

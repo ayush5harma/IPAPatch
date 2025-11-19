@@ -153,6 +153,10 @@ rm -rf "$TARGET_APP_PATH" || true
 mkdir -p "$TARGET_APP_PATH" || true
 cp -rfP "$TEMP_APP_PATH/" "$TARGET_APP_PATH/"
 
+# Remove the old embedded provisioning profile so Xcode can embed the correct one
+echo "Removing old embedded.mobileprovision from extracted IPA"
+rm -f "$TARGET_APP_CONTENTS_PATH/embedded.mobileprovision" || true
+
 
 
 
@@ -297,6 +301,9 @@ TARGET_DISPLAY_NAME="$DUMMY_DISPLAY_NAME$TARGET_DISPLAY_NAME"
 if [ "$IGNORE_UI_SUPPORTED_DEVICES" = true ]; then
     /usr/libexec/PlistBuddy -c "Delete :UISupportedDevices" "$TARGET_APP_CONTENTS_PATH/Info.plist"
 fi
+
+echo "Enabling UIFileSharingEnabled for file sharing access"
+/usr/libexec/PlistBuddy -c "Add :UIFileSharingEnabled bool true" "$TARGET_APP_CONTENTS_PATH/Info.plist" 2>/dev/null || /usr/libexec/PlistBuddy -c "Set :UIFileSharingEnabled true" "$TARGET_APP_CONTENTS_PATH/Info.plist"
 
 # ---------------------------------------------------
 # 8. Code Sign All The Things
